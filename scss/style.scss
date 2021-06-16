@@ -1,0 +1,126 @@
+$primary: #3292a6;
+$bg-dark: #3E3C3C;
+$bg-darker: #262626;
+$main-color: #F55800;
+
+
+body {
+  margin-top: 105px;
+  background: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  background: $bg-dark;
+  
+
+  .nav-item {
+    font-size-adjust: 1.4rem;
+    padding-right: 1.4rem;
+
+    .nav-link {
+      text-decoration: none;
+      color: #fff;
+
+      &:hover {
+        color: $main-color;
+      }
+
+      &.current {
+        color: $main-color;
+      }
+    }
+    
+  }
+}
+
+#showcase {
+  background: $bg-darker;
+  min-height: 600px;
+
+  .showcase-content {
+    align-items: center;
+
+    h1 {
+      color: $main-color;
+      font-size: 50px;
+    }
+  }
+}
+
+#projects {
+
+}
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid;
+  color: $main-color;
+}
+
+#about {
+  background: $bg-darker;
+
+  .lead {
+    color: #F4F5F7;
+  }
+
+  #accordion .accord-list {
+    font-weight: bold;
+  }
+}
+
+
+
+#contact {
+  .lead {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 52px;
+    color: #ccc;
+    border: 1px $bg-dark solid;
+    background: $bg-dark;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .input-group-prepend span {
+    height: 100%;
+  }
+
+ 
+}
+
+.input-btn {
+  background: $main-color;
+  color: #fff;
+}
+
+footer {
+  background: $bg-dark;
+
+  .footer-col {
+    color: $main-color;
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width:768px) {
+  #showcase {
+    min-height: 500px;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
